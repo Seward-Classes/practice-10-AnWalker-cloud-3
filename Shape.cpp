@@ -1,3 +1,5 @@
+// Ai Disclaimer: assisted to understand polymorphisim and debugging.
+
 #include "Shape.h"
 
 // ---------------- Rectangle ----------------

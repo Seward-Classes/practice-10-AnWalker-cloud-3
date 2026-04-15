@@ -1,3 +1,5 @@
+// Ai Disclaimer: assisted to understand polymorphisim and debugging.
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -24,13 +26,14 @@ int main() {
     }
 
     std::vector<std::unique_ptr<Shape>> shapes;
+
     std::string line;
     int lineNum = 0;
 
     while (std::getline(file, line)) {
         lineNum++;
-        std::istringstream iss(line);
 
+        std::istringstream iss(line);
         std::string type;
         iss >> type;
 
@@ -56,5 +59,6 @@ int main() {
     }
 
     printAllAreas(shapes);
+
     return 0;
 }
